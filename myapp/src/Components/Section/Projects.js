@@ -29,10 +29,10 @@ function Projects(){
 
             <Card
             img={Portifolio}
-            title="LP - DNC"
-            tech=" HTML, CSS e JS " 
+            title="Meu portifólio"
+            tech=" REACT" 
             descripton="Este é o projeto de desenvolvimento do módulo do curso de Tecnologia da escola DNC."
-            repo='' 
+            repo='https://github.com/fernandesygor/Portifolio' 
             site='' 
             />
             
