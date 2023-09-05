@@ -1,8 +1,21 @@
 import styles from './Presentation.module.css'
 import ButtonA from '../elements/ButtonA'
+import { useEffect, useState } from 'react'
 
 
 function Presentation(){
+    const [text, setText] = useState('')
+    const toRotate = ['Ygor Francisco!', 'Desenvolvedor Front End', 'Product Manager']
+    const [loop,setLoop] = useState(0)
+
+
+    useEffect(()=>{
+        let ticker = setInterval(2000) 
+        return()=> {clearInterval(ticker)}   
+
+    },[text])
+
+
     return(
         <div className={styles.Presentation} id="Presentation">
             <p><strong>Bem-vindo ao meu Portfólio</strong></p>
